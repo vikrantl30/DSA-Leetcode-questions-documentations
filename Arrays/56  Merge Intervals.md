@@ -26,7 +26,7 @@ Arrays.sort(intervals, new Comparator<int[]>() {
 ```
 ➡️ Here, we’re comparing a[0] and b[0], i.e., the start times of intervals.
 
-##💡 What Comparator Is
+## 💡 What Comparator Is
 Comparator<T> is a functional interface in java.util.
 
 It contains one abstract method:
@@ -38,7 +38,7 @@ int compare(T o1, T o2);
 This method defines how to order two objects during sorting.
 You override it to specify your own logic (like sorting by start time).
 
-##🔍 Why compare() Works
+## 🔍 Why compare() Works
 compare() is an inbuilt abstract method of the Comparator interface.
 
 When you override it, you’re telling Java how to compare two elements.
@@ -47,7 +47,7 @@ Arrays.sort() internally calls this overridden compare() during sorting.
 
 ✅ So, Arrays.sort() + Comparator together allow custom sorting logic for complex types (like 2D arrays).
 
-🧱 How Comparator Is Passed
+## 🧱 How Comparator Is Passed
 The line below passes a Comparator object to the sort method:
 
 ```java
